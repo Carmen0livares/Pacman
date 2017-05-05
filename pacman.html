@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>API Canvas Pacman</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="curso Desarrollo Web">
+		<meta name="keywords" content="HTML5,CSS3,JavaScript,PHP">
+		<meta name="author" content="Carmen Olivares">
+		<link rel="stylesheet" href="#">
+	</head>
+	<body>
+	<h1>Pacman</h1>
+		<canvas id="canvas" width="700px" height="400px" style="border:2px solid cyan" />
+		<script>
+				var c = document.getElementById("canvas");
+				var ctx = c.getContext("2d");
+
+				ctx.fillStyle = "yellow";
+				ctx.beginPath(); 
+				//arc(cx, cy, radio, inicioArco (rad), finArco(rad), sentido horario)
+				ctx.moveTo(200, 200);
+				ctx.arc(200, 200, 150, 1.78* Math.PI, 0.5, true);
+				ctx.fill();
+				
+				ctx.beginPath(); 
+				ctx.fillStyle = "black";
+				ctx.moveTo(60, 70);
+				ctx.arc(210, 100, 15, 0, Math.PI * 2, true);
+				ctx.fill();
+				
+				ctx.beginPath(); 
+				ctx.fillStyle = "gold";
+				ctx.moveTo(65, 65);
+				ctx.arc(500, 200, 25, 0, Math.PI * 2, true);
+				ctx.fill();
+				
+				ctx.beginPath(); 
+				ctx.fillStyle = "gold";
+				ctx.moveTo(65, 65);
+				ctx.arc(400, 200, 25, 0, Math.PI * 2, true);
+				ctx.fill();
+				
+				ctx.beginPath(); 
+				ctx.fillStyle = "gold";
+				ctx.moveTo(65, 65);
+				ctx.arc(300, 200, 25, 0, Math.PI * 2, true);
+				ctx.fill();
+				
+				ctx.beginPath(); 
+				ctx.fillStyle = "gold";
+				ctx.moveTo(65, 65);
+				ctx.arc(600, 200, 25, 0, Math.PI * 2, true);
+				ctx.fill();
+		</script>
+	</body>
+</html>
