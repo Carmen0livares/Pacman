@@ -1,2 +1,2 @@
 # Pacman
-Pacaman en canvas &amp; JavaScript
+Pacman en canvas &amp; JavaScript
